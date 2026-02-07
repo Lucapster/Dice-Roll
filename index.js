@@ -1,25 +1,7 @@
-const decreaseBtn = document.getElementById("decrease_btn");
-const increaseBtn = document.getElementById("increase_btn");
-const resetBtn = document.getElementById("reset_btn");
-
-const countLabel = document.getElementById("count_label");
-
-let count = 0;
-
-increase_btn.onclick = function() {
-  count += 1;
-  countLabel.innerText = count;
-}
-
-decrease_btn.onclick = function() {
-  count -= 1;
-  countLabel.innerText = count;
+roll_btn.onclick = function() {
+  let num = Math.floor(Math.random() * 6) + 1;
+  src = "imgs/" + num + ".png";
+  img = document.getElementById("die").src = src;
+  img = document.getElementById("die").alt = num;
 
 }
-
-reset_btn.onclick = function() {
-  count = 0;
-  countLabel.innerText = count;
-
-}
-

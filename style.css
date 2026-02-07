@@ -20,3 +20,8 @@
 .buttons:hover {
   background-color: grey;
 }
+
+#die {
+  height: 5em;
+  width: 5em;
+}
